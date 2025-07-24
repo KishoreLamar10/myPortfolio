@@ -1,0 +1,11 @@
+.contact-button {
+  background-color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #ff0000;
+  color: #fbfbfb;
+  border: 1px solid #fff;
+}

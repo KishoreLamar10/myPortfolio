@@ -1,0 +1,30 @@
+.footer-section {
+  background-color: #111;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.back-to-top {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.footer-icons a {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+  color: #ff5555;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: #aaa;
+}

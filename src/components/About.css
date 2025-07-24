@@ -1,0 +1,52 @@
+.about-section {
+  background-image: url('/image1.avif'); /* or .png, .jpeg depending on your file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  scroll-margin-top: 80px;
+  color: #d65d5d;
+}
+.about-section .text-muted {
+  color: #fff !important;
+}
+
+
+/* Optional overlay to ensure text stays readable */
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(31, 29, 29, 0.85); /* adjust transparency as needed */
+  z-index: -1;
+}
+
+.about-heading {
+  font-weight: 600;
+  font-size: 1.75rem;
+  border: 2px solid #000;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  letter-spacing: 0.1rem;
+}
+
+.explore-divider .divider-line {
+  width: 50px;
+  height: 2px;
+  background-color: #000;
+  margin: 0.5rem auto 0;
+}
+
+.about-feature {
+  padding: 1rem;
+}
+
+.about-feature:hover {
+  transform: translateY(-8px);
+  transition: transform 0.3s ease;
+}
+
