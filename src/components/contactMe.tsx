@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import './ContactMe.css';
+import './contactMe.css';
 
 function ContactMe() {
   const form = useRef<HTMLFormElement>(null); // Type-safe ref
