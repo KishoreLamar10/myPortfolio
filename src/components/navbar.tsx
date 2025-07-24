@@ -1,4 +1,3 @@
-import React from 'react';
 import './Navbar.css'; // <-- We'll define hover animation here
 
 function Navbar() {

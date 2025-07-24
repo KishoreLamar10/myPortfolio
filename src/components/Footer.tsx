@@ -1,4 +1,3 @@
-import React from 'react';
 import './Footer.css';
 import { FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram, FaEnvelope } from 'react-icons/fa';
 
