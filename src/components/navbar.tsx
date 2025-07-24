@@ -1,4 +1,4 @@
-import './Navbar.css'; // <-- We'll define hover animation here
+import './navbar.css';
 
 function Navbar() {
   return (
