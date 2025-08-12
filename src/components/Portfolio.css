@@ -16,8 +16,8 @@
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);  /* 3 columns */
-  grid-template-rows: repeat(2, auto);    /* 2 rows */
+  grid-template-columns: repeat(3, 1fr);  /* 3 columns */
+  grid-template-rows: repeat(3, auto);    /* 3 rows */
   gap: 1rem;
   padding: 0 2rem;
   max-width: 1200px;
