@@ -15,6 +15,11 @@ function Portfolio() {
       link: "https://popcornboxoffice.streamlit.app/",
     },
     { id: 2, img: "/pf3.png", link: "https://jsgames-flame.vercel.app/" },
+    {
+      id: 6,
+      img: "/genai.png",
+      link: "https://networksupportagent.vercel.app/",
+    },
   ];
 
   return (
