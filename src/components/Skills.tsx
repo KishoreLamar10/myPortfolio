@@ -4,7 +4,6 @@ import {
   FaAws,
   FaCloud,
   FaCode,
-  FaCss3Alt,
   FaDatabase,
   FaDocker,
   FaGitAlt,
