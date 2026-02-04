@@ -1,19 +1,21 @@
-import './About.css';
+import "./About.css";
 
 function About() {
   return (
     <section id="about" className="about-section py-5 bg-light text-center">
       <div className="container">
-
         {/* Section Heading */}
         <h2 className="about-heading mx-auto">ABOUT ME</h2>
-        <p className="text-muted w-75 mx-auto mt-3">
-          I'm a software developer passionate about crafting modern web applications. I value clean code, simple interfaces, and solving meaningful problems.
+        <p className="about-description mx-auto mt-3">
+          Software Engineer with 2+ years of experience building scalable
+          React/Node.js applications, backend services, and data‑driven systems.
+          I deliver measurable impact through performance tuning, automation,
+          and reliable API design.
         </p>
 
         {/* Explore Divider */}
         <div className="explore-divider my-4">
-          <span className="text-uppercase text-muted small">Explore</span>
+          <span className="text-uppercase text-muted small">EXPLORE</span>
           <div className="divider-line mt-2"></div>
         </div>
 
@@ -22,9 +24,12 @@ function About() {
           <div className="col-md-4">
             <div className="about-feature">
               <i className="bi bi-vector-pen fs-1 mb-3 text-primary"></i>
-              <h5 className="fw-bold">Design</h5>
-              <p className="text-muted">
-                I engineer high-performance, responsive user interfaces by translating Figma designs into pixel-perfect, component-based applications. Leveraging React, Tailwind CSS, and modern state management tools like Redux Toolkit, I build scalable front-end systems with a mobile-first philosophy. My development process emphasizes performance optimization through code-splitting and lazy loading, and I validate quality and accessibility using tools like Lighthouse, Jest, and React Testing Library
+              <h5 className="fw-bold text-uppercase">Frontend Engineering</h5>
+              <p className="text-muted about-feature-text">
+                I build React and Next.js interfaces with strong UX, reusable
+                components, and performance‑first delivery. I’ve shipped dynamic
+                dashboards and responsive flows that reduce support load and
+                improve maintainability.
               </p>
             </div>
           </div>
@@ -32,9 +37,11 @@ function About() {
           <div className="col-md-4">
             <div className="about-feature">
               <i className="bi bi-code-slash fs-1 mb-3 text-success"></i>
-              <h5 className="fw-bold">Development</h5>
-              <p className="text-muted">
-                I am a proficient full-stack developer specializing in building, testing, and deploying robust web applications using the MERN stack. I excel at creating dynamic, responsive user interfaces with React and managing complex application state with Redux. On the back end, I architect and implement secure RESTful and GraphQL APIs using Node.js and Express, ensuring seamless data flow. My expertise includes both NoSQL (MongoDB) and SQL (MySQL, PostgreSQL) database design and management. I am committed to writing clean, maintainable code with TypeScript and leveraging modern DevOps practices like Docker and CI/CD for efficient development cycles.
+              <h5 className="fw-bold text-uppercase">Backend & Data</h5>
+              <p className="text-muted about-feature-text">
+                I design REST APIs with JWT auth, tune SQL queries, and model
+                data for analytics at scale. I’ve improved query latency and
+                maintained high availability across global business units.
               </p>
             </div>
           </div>
@@ -42,14 +49,15 @@ function About() {
           <div className="col-md-4">
             <div className="about-feature">
               <i className="bi bi-tools fs-1 mb-3 text-danger"></i>
-              <h5 className="fw-bold">Maintenance</h5>
-              <p className="text-muted">
-                I maintain high-performance, secure, and reliable web applications by implementing robust development practices. This includes leveraging Git-based CI/CD pipelines for safe and automated deployments, writing clean and maintainable code to simplify updates, and providing proactive post-launch support that covers security audits, performance tuning, and bug resolution
+              <h5 className="fw-bold text-uppercase">DevOps & GenAI</h5>
+              <p className="text-muted about-feature-text">
+                I automate CI/CD with GitHub Actions and Docker, and build GenAI
+                workflows using LangChain, FAISS, and OpenAI APIs. I focus on
+                fast, reliable releases and production‑ready AI tooling.
               </p>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

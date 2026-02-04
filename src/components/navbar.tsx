@@ -1,10 +1,15 @@
-import './navbar.css';
+import "./navbar.css";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg px-4 fixed-top" style={{ backgroundColor: '#000' }}>
+    <nav
+      className="navbar navbar-expand-lg px-4 fixed-top"
+      style={{ backgroundColor: "#000" }}
+    >
       <div className="container-fluid">
-        <a className="navbar-brand fw-bold fs-4 text-white" href="#">AK10</a>
+        <a className="navbar-brand fw-bold fs-4 text-white" href="#">
+          AK10
+        </a>
 
         <button
           className="navbar-toggler text-white"
@@ -18,19 +23,40 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul className="navbar-nav gap-4 align-items-center">
             <li className="nav-item">
-              <a className="nav-link text-white" href="#about">About me</a>
+              <a
+                className="btn nav-button"
+                href="/Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#skills">Skills</a>
+              <a className="nav-link text-white" href="#about">
+                About Me
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#portfolio">Portfolio</a>
+              <a className="nav-link text-white" href="#skills">
+                Skills
+              </a>
             </li>
             <li className="nav-item">
-              <a href="#contact" className="btn btn-white text-dark fw-semibold contact-button">Contact Me</a>
+              <a className="nav-link text-white" href="#portfolio">
+                Portfolio
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#contact" className="btn nav-button">
+                Contact Me
+              </a>
             </li>
           </ul>
         </div>

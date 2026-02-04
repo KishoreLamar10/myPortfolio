@@ -34,6 +34,14 @@
   letter-spacing: 0.1rem;
 }
 
+.about-description {
+  max-width: 720px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
 .explore-divider .divider-line {
   width: 50px;
   height: 2px;
@@ -43,10 +51,26 @@
 
 .about-feature {
   padding: 1rem;
+  text-align: left;
+}
+
+.about-feature h5 {
+  letter-spacing: 0.08rem;
+}
+
+.about-feature-text {
+  line-height: 1.7;
+  margin-top: 0.75rem;
 }
 
 .about-feature:hover {
   transform: translateY(-8px);
   transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .about-feature {
+    text-align: center;
+  }
 }
 
