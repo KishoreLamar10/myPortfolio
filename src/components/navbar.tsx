@@ -4,7 +4,6 @@ function Navbar() {
   return (
     <nav
       className="navbar navbar-expand-lg px-4 fixed-top"
-      style={{ backgroundColor: "#000" }}
     >
       <div className="container-fluid">
         <a className="navbar-brand fw-bold fs-4 text-white" href="#">
