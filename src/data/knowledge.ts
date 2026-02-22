@@ -19,15 +19,15 @@ export const KNOWLEDGE_BASE = {
   ],
   projects: [
     {
-      id: "tours",
-      name: "My Tours",
-      type: "Frontend/SaaS",
-      description: "A single-page application built with React to showcase travel packages.",
-      tech_stack: ["React", "CSS3", "JavaScript"],
-      highlights: ["SPA Architecture", "Responsive Design", "Performance Optimized"],
-      problem: "Traditional travel sites were slow and clunky, leading to poor user retention.",
-      solution: "Implemented a lightweight React SPA with client-side routing and optimized asset loading for instant transitions.",
-      what_else: "It features a robust search and filter system that handles state locally for maximum snappiness."
+      id: "network-agent",
+      name: "Network Support Agent",
+      type: "GenAI/RAG",
+      description: "A specialized AI agent that handles network troubleshooting using RAG.",
+      tech_stack: ["LangChain", "OpenAI", "Pinecone", "Python"],
+      highlights: ["RAG Implementation", "Automated Troubleshooting", "Knowledge Retrieval"],
+      problem: "Network troubleshooting documentation is often dense and hard to navigate during a crisis.",
+      solution: "Built a RAG-based chatbot that indexes technical docs in a vector database (Pinecone) and provides conversational answers.",
+      what_else: "It drastically reduces Mean Time to Resolution (MTTR) by surfacing relevant commands and fixes instantly."
     },
     {
       id: "resume-matcher",
@@ -41,17 +41,6 @@ export const KNOWLEDGE_BASE = {
       what_else: "The system uses TF-IDF and Cosine Similarity to provide a match score, significantly reducing initial screening time."
     },
     {
-      id: "network-agent",
-      name: "Network Support Agent",
-      type: "GenAI/RAG",
-      description: "A specialized AI agent that handles network troubleshooting using RAG.",
-      tech_stack: ["LangChain", "OpenAI", "Pinecone", "Python"],
-      highlights: ["RAG Implementation", "Automated Troubleshooting", "Knowledge Retrieval"],
-      problem: "Network troubleshooting documentation is often dense and hard to navigate during a crisis.",
-      solution: "Built a RAG-based chatbot that indexes technical docs in a vector database (Pinecone) and provides conversational answers.",
-      what_else: "It drastically reduces Mean Time to Resolution (MTTR) by surfacing relevant commands and fixes instantly."
-    },
-    {
       id: "pokedex",
       name: "Pokédex",
       type: "Web App",
@@ -61,6 +50,17 @@ export const KNOWLEDGE_BASE = {
       problem: "Most Pokedex apps lack support for complex regional forms (Alolan, Galarian) and special varieties.",
       solution: "Engineered a recursive fetching logic that handles varieties and forms using TypeScript context for safety.",
       what_else: "It features a high-fidelity detail view with interactive stats, evolution chains, and full form support."
+    },
+    {
+      id: "tours",
+      name: "My Tours",
+      type: "Frontend/SaaS",
+      description: "A single-page application built with React to showcase travel packages.",
+      tech_stack: ["React", "CSS3", "JavaScript"],
+      highlights: ["SPA Architecture", "Responsive Design", "Performance Optimized"],
+      problem: "Traditional travel sites were slow and clunky, leading to poor user retention.",
+      solution: "Implemented a lightweight React SPA with client-side routing and optimized asset loading for instant transitions.",
+      what_else: "It features a robust search and filter system that handles state locally for maximum snappiness."
     }
   ],
   skills: {
