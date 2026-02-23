@@ -21,7 +21,7 @@ function About() {
   };
 
   return (
-    <section id="about" className="about-section py-5 bg-light text-center">
+    <section id="about" className="about-section py-5 text-center">
       <div className="container">
         {/* Section Heading */}
         <motion.h2 

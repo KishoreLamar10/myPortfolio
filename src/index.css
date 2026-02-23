@@ -6,7 +6,7 @@
   --bg-darker: #050505;
   --accent: #e63946;
   --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
+  --text-secondary: #e0e0e0;
   
   --glass-bg: rgba(0, 0, 0, 0.6);
   --glass-border: rgba(255, 255, 255, 0.1);
@@ -29,6 +29,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   letter-spacing: -0.02em;
+  color: var(--text-primary) !important;
+}
+
+.text-muted, .text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+p, span, div {
+  color: var(--text-primary);
 }
 
 .section-heading {

@@ -35,7 +35,7 @@ function Intro() {
         <motion.p variants={itemVariants} className="lead text-secondary">Software Developer</motion.p>
 
         <motion.div variants={itemVariants} className="d-flex gap-3 mt-4">
-            <a href="https://github.com/KishoreLamar10" target="_blank" rel="noopener noreferrer"><i className="bi bi-github fs-4 text-dark"></i></a>
+            <a href="https://github.com/KishoreLamar10" target="_blank" rel="noopener noreferrer"><i className="bi bi-github fs-4 text-light"></i></a>
             <a href="https://www.linkedin.com/in/kishorekumaravudai/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin fs-4 text-primary"></i></a>
             <a href="mailto:balakishore619@gmail.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-envelope fs-4 text-danger"></i></a>
         </motion.div>
@@ -50,7 +50,7 @@ function Intro() {
         transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
       >
         <motion.img 
-          src="/profile.webp" 
+          src="/profile_photo.jpeg" 
           alt="Profile" 
           className="intro-img"
           whileHover={{ scale: 1.05, rotate: 2 }}
