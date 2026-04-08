@@ -31,7 +31,7 @@ function Portfolio() {
       id: 8,
       img: "/arch-analysis.png",
       link: "https://architectural-change-analysis.vercel.app/",
-      github: "https://github.com/KishoreLamar10",
+      github: "https://github.com/KishoreLamar10/ArchitecturalChangeAnalysis",
       title: "Architectural Change Analysis",
       tags: ["GIS Engine", "Forensic Scoring", "FastAPI"],
       description: "AI-powered urban forensic platform for longitudinal architectural comparison.",
@@ -42,7 +42,7 @@ function Portfolio() {
       id: 6,
       img: "/genai.webp",
       link: "https://networksupportagent.vercel.app/",
-      github: "https://github.com/KishoreLamar10",
+      github: "https://github.com/KishoreLamar10/networksupportagent",
       title: "Network Support Agent",
       tags: ["RAG Workflow", "LLM Orchestration", "Realtime Messaging"],
       description: "An intelligent support bot powered by retrieval-augmented generation for technical troubleshooting.",
@@ -53,7 +53,7 @@ function Portfolio() {
       id: 4,
       img: "/pf4.webp",
       link: "https://resume-matcherr.streamlit.app/",
-      github: "https://github.com/KishoreLamar10",
+      github: "https://github.com/KishoreLamar10/Resume-Matcher",
       title: "Resume Matcher",
       tags: ["Semantic Matching", "Vector Similarity", "NLP Pipeline"],
       description: "An AI-powered tool that bridges the gap between job descriptions and potential candidates.",
@@ -64,7 +64,7 @@ function Portfolio() {
       id: 7,
       img: "/pokedex-ball.webp",
       link: "https://my-pokedex-chi-five.vercel.app/",
-      github: "https://github.com/KishoreLamar10",
+      github: "https://github.com/KishoreLamar10/myPokedex",
       title: "Pokedex",
       tags: ["Graph Traversal", "Typed Fetching", "Client-Side Caching"],
       description: "A highly interactive, typed encyclopedia for the Pokémon world.",
@@ -75,7 +75,7 @@ function Portfolio() {
       id: 3,
       img: "/pf1.webp",
       link: "https://mytours-87mi.onrender.com/",
-      github: "https://github.com/KishoreLamar10",
+      github: "https://github.com/KishoreLamar10/MyTours",
       title: "My Tours",
       tags: ["SPA Architecture", "RESTful Integration", "Component Composition"],
       description: "A comprehensive travel booking platform designed for seamless user experiences.",
@@ -86,7 +86,7 @@ function Portfolio() {
       id: 5,
       img: "/pf7.webp",
       link: "https://popcornboxoffice.streamlit.app/",
-      github: "https://github.com/KishoreLamar10",
+      github: "https://github.com/KishoreLamar10/popcornboxoffice",
       title: "Popcorn Box Office",
       tags: ["Exploratory Analytics", "ETL Workflow", "Data Visualization"],
       description: "A data-driven dashboard for analyzing box office trends and predicting movie success.",
@@ -97,7 +97,7 @@ function Portfolio() {
       id: 1,
       img: "/pf2.webp",
       link: "https://movie-search-theta-lemon.vercel.app/",
-      github: "https://github.com/KishoreLamar10",
+      github: "https://github.com/KishoreLamar10/MovieSearch",
       title: "Movie Search",
       tags: ["Client-Side Querying", "Debounced Search", "API Orchestration"],
       description: "A real-time movie exploration tool connecting users with a massive cinematic database.",
@@ -108,7 +108,7 @@ function Portfolio() {
       id: 2,
       img: "/pf3.webp",
       link: "https://jsgames-flame.vercel.app/",
-      github: "https://github.com/KishoreLamar10",
+      github: "https://github.com/KishoreLamar10/GamesJS",
       title: "JS Games",
       tags: ["Event Loop Control", "Collision Detection", "Canvas Rendering"],
       description: "A collection of high-performance arcade games built purely with vanilla JavaScript.",
@@ -137,7 +137,7 @@ function Portfolio() {
 
   return (
     <section id="portfolio" className="portfolio-section text-center py-5">
-      <motion.h2 
+      <motion.h2
         className="portfolio-heading"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -146,7 +146,7 @@ function Portfolio() {
         PORTFOLIO
       </motion.h2>
 
-      <motion.div 
+      <motion.div
         className="portfolio-grid"
         variants={containerVariants}
         initial="hidden"
