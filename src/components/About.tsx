@@ -40,10 +40,10 @@ function About() {
           transition={{ delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Software Engineer with 2+ years of experience building scalable
-          React/Node.js applications, backend services, and data‑driven systems.
-          I deliver measurable impact through performance tuning, automation,
-          and reliable API design.
+          Software Engineer specializing in scalable full‑stack and AI systems. Currently a Research Assistant at the 
+          <strong> University at Buffalo</strong>, where I build agentic workflows, MCP tool servers, and 
+          distributed infrastructures. I focus on delivering measurable impact through performance tuning 
+          and production‑grade AI integration.
         </motion.p>
 
         {/* Explore Divider */}
@@ -66,13 +66,12 @@ function About() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div className="about-feature">
-              <i className="bi bi-vector-pen fs-1 mb-3 text-primary"></i>
-              <h5 className="fw-bold text-uppercase">Frontend Engineering</h5>
+              <i className="bi bi-robot fs-1 mb-3 text-primary"></i>
+              <h5 className="fw-bold text-uppercase">Agentic AI & RAG</h5>
               <p className="text-muted about-feature-text">
-                I build React and Next.js interfaces with strong UX, reusable
-                components, and performance‑first delivery. I’ve shipped dynamic
-                dashboards and responsive flows that reduce support load and
-                improve maintainability.
+                I engineer multi‑agent systems using LangGraph and MCP tool orchestration. 
+                My focus is on iterative retrieval, specialized tool sets, and reducing 
+                hallucinations in large‑scale academic and technical collections.
               </p>
             </div>
           </motion.div>
@@ -83,12 +82,12 @@ function About() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div className="about-feature">
-              <i className="bi bi-code-slash fs-1 mb-3 text-success"></i>
-              <h5 className="fw-bold text-uppercase">Backend & Data</h5>
+              <i className="bi bi-layers fs-1 mb-3 text-success"></i>
+              <h5 className="fw-bold text-uppercase">Full-Stack & Distributed</h5>
               <p className="text-muted about-feature-text">
-                I design REST APIs with JWT auth, tune SQL queries, and model
-                data for analytics at scale. I’ve improved query latency and
-                maintained high availability across global business units.
+                I build high‑performance backends with FastAPI and Spring Boot, integrated 
+                with modern React/Next.js frontends. I optimize for low‑latency retrieval 
+                and scalable state management across microservices.
               </p>
             </div>
           </motion.div>
@@ -99,12 +98,12 @@ function About() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div className="about-feature">
-              <i className="bi bi-tools fs-1 mb-3 text-danger"></i>
-              <h5 className="fw-bold text-uppercase">DevOps & GenAI</h5>
+              <i className="bi bi-cloud-check fs-1 mb-3 text-danger"></i>
+              <h5 className="fw-bold text-uppercase">Cloud & DevOps</h5>
               <p className="text-muted about-feature-text">
-                I automate CI/CD with GitHub Actions and Docker, and build GenAI
-                workflows using LangChain, FAISS, and OpenAI APIs. I focus on
-                fast, reliable releases and production‑ready AI tooling.
+                I automate reliability through CI/CD pipelines, containerization with Docker, 
+                and orchestration via Kubernetes. I leverage AWS and GCP services to 
+                deploy zero‑downtime, globally scalable applications.
               </p>
             </div>
           </motion.div>

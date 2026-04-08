@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar";
 import About from "./components/About";
 import Intro from "./components/intro";
+import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import ContactMe from "./components/contactMe";
@@ -20,11 +21,12 @@ function App() {
       >
         <Intro />
         <About />
-        <Skills />
+        <Experience />
         <Portfolio />
+        <Skills />
         <ContactMe />
-        <Footer />
       </motion.main>
+      <Footer />
       <AIChatbot />
     </div>
   );

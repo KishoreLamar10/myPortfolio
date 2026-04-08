@@ -28,6 +28,17 @@ function Portfolio() {
 
   const projects: Project[] = [
     {
+      id: 8,
+      img: "/arch-analysis.png",
+      link: "https://architectural-change-analysis.vercel.app/",
+      github: "https://github.com/KishoreLamar10",
+      title: "Architectural Change Analysis",
+      tags: ["GIS Engine", "Forensic Scoring", "FastAPI"],
+      description: "AI-powered urban forensic platform for longitudinal architectural comparison.",
+      problem: "Identifying decades of urban architectural transitions is manually intensive and prone to oversight.",
+      solution: "Developed an AI-powered GIS platform that automates forensic scoring and features a custom 20m interval coordinate sampling algorithm.",
+    },
+    {
       id: 6,
       img: "/genai.webp",
       link: "https://networksupportagent.vercel.app/",
