@@ -11,7 +11,7 @@ const Experience = () => {
         staggerChildren: 0.3,
       },
     },
-  };
+  } as const;
 
   const itemVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -20,7 +20,7 @@ const Experience = () => {
       y: 0,
       transition: { duration: 0.8, ease: "easeOut" },
     },
-  };
+  } as const;
 
   return (
     <section id="experience" className="experience-section">

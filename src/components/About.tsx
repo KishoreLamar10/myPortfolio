@@ -10,7 +10,7 @@ function About() {
         staggerChildren: 0.2,
       },
     },
-  };
+  } as const;
 
   const itemVariants = {
     hidden: { y: 30, opacity: 0 },
@@ -18,7 +18,7 @@ function About() {
       y: 0,
       opacity: 1,
     },
-  };
+  } as const;
 
   return (
     <section id="about" className="about-section py-5 text-center">

@@ -125,7 +125,7 @@ function Portfolio() {
         staggerChildren: 0.2,
       },
     },
-  };
+  } as const;
 
   const itemVariants = {
     hidden: { y: 40, opacity: 0 },
@@ -133,7 +133,7 @@ function Portfolio() {
       y: 0,
       opacity: 1,
     },
-  };
+  } as const;
 
   return (
     <section id="portfolio" className="portfolio-section text-center py-5">

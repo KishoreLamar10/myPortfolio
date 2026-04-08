@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaPaperPlane, FaCheckCircle, FaExclamationCircle } from 'react-icons/fa';
 import './contactMe.css';
@@ -69,7 +69,7 @@ function ContactMe() {
         className="contact-heading"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 0.8, ease: "easeOut" as const }}
         viewport={{ once: true, amount: 0.5 }}
       >
         CONTACT ME
@@ -79,7 +79,7 @@ function ContactMe() {
         className="contact-description"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        transition={{ duration: 0.8, ease: "easeOut" as const, delay: 0.2 }}
         viewport={{ once: true, amount: 0.5 }}
       >
         Feel free to reach out to me for collaboration, project work, or just to say hello!

@@ -11,7 +11,7 @@ function Intro() {
         delayChildren: 0.5,
       },
     },
-  };
+  } as const;
 
   const itemVariants = {
     hidden: { y: 30, opacity: 0 },
@@ -19,7 +19,7 @@ function Intro() {
       y: 0,
       opacity: 1,
     },
-  };
+  } as const;
 
   return (
     <section id="intro" className="intro-section d-flex">
@@ -47,7 +47,7 @@ function Intro() {
         className="intro-right d-flex justify-content-center align-items-center"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
+        transition={{ duration: 1.2, ease: "easeOut" as const, delay: 0.3 }}
       >
         <motion.img 
           src="/profile_photo.jpeg" 
