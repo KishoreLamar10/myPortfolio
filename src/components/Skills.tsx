@@ -3,6 +3,7 @@ import "./Skills.css";
 
 import {
   FaAws,
+  FaBrain,
   FaCloud,
   FaCode,
   FaDatabase,
@@ -10,10 +11,12 @@ import {
   FaGitAlt,
   FaJava,
   FaJs,
+  FaLink,
   FaNodeJs,
   FaPython,
   FaReact,
-  FaRobot,
+  FaSearch,
+  FaTerminal,
 } from "react-icons/fa";
 import {
   SiApachespark,
@@ -178,7 +181,6 @@ function Skills() {
         <h5 className="skills-category">DATA / ML:</h5>
         <div className="skills-icons">
           {[
-            { icon: <FaDatabase className="icon db" />, name: "SQL (PostgreSQL/MySQL)" },
             { icon: <SiPostgresql className="icon postgres" />, name: "PostgreSQL" },
             { icon: <SiMysql className="icon" />, name: "MySQL" },
             { icon: <SiMongodb className="icon mongo" />, name: "MongoDB" },
@@ -214,11 +216,11 @@ function Skills() {
         <div className="skills-icons">
           {[
             { icon: <SiOpenai className="icon openai" />, name: "OpenAI API" },
-            { icon: <FaRobot className="icon" />, name: "LLMs" },
-            { icon: <FaRobot className="icon" />, name: "LangChain" },
-            { icon: <FaRobot className="icon" />, name: "FAISS" },
-            { icon: <FaRobot className="icon" />, name: "RAG" },
-            { icon: <FaRobot className="icon" />, name: "Prompt Engineering" }
+            { icon: <FaBrain className="icon" />, name: "LLMs" },
+            { icon: <FaLink className="icon" />, name: "LangChain" },
+            { icon: <FaDatabase className="icon db" />, name: "FAISS" },
+            { icon: <FaSearch className="icon" />, name: "RAG" },
+            { icon: <FaTerminal className="icon" />, name: "Prompt Engineering" }
           ].map((skill, index) => (
             <motion.div 
               key={index} 

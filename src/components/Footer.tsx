@@ -12,7 +12,7 @@ function Footer() {
         <a href="mailto:balakishore619@gmail.com" target="_blank" aria-label="Email"><FaEnvelope /></a>
       </div>
 
-      <p className="footer-text mt-3">©2025 Kishorekumar All Rights Reserved.</p>
+      <p className="footer-text mt-3">©2026 Kishorekumar All Rights Reserved.</p>
     </footer>
   );
 }

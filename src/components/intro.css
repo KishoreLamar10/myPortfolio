@@ -25,11 +25,23 @@
   margin-bottom: 1rem;
 }
 
-.intro-left h1 {
-  font-size: 5rem;
-  font-weight: 700;
+.intro-name {
+  display: flex;
+  flex-direction: column;
   line-height: 1;
   margin-bottom: 1rem;
+}
+
+.intro-firstname {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.intro-lastname {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--accent);
 }
 
 .intro-left .lead {
@@ -94,8 +106,12 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
 
-  .intro-left h1 {
+  .intro-firstname {
     font-size: 3.5rem;
+  }
+
+  .intro-lastname {
+    font-size: 1.6rem;
   }
 
   .intro-right {

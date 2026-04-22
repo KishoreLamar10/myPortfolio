@@ -31,8 +31,11 @@ function Intro() {
         animate="visible"
       >
         <motion.h5 variants={itemVariants} className="text-uppercase text-muted">Hi, I am</motion.h5>
-        <motion.h1 variants={itemVariants} className="fw-bold display-4">KISHOREKUMAR</motion.h1>
-        <motion.p variants={itemVariants} className="lead text-secondary">Software Developer</motion.p>
+        <motion.h1 variants={itemVariants} className="fw-bold intro-name">
+          <span className="intro-firstname">KISHOREKUMAR</span>
+          <span className="intro-lastname">AVUDAI NAYAGAM</span>
+        </motion.h1>
+        <motion.p variants={itemVariants} className="lead text-secondary">Software Engineer</motion.p>
 
         <motion.div variants={itemVariants} className="d-flex gap-3 mt-4">
             <a href="https://github.com/KishoreLamar10" target="_blank" rel="noopener noreferrer"><i className="bi bi-github fs-4 text-light"></i></a>
