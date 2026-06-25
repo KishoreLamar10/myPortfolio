@@ -1,0 +1,194 @@
+.hero-content {
+  padding: 48px 48px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* ── DUAL-LAYER TITLE ──────────────────────────── */
+.hero-title-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.dual-heading {
+  position: relative;
+  display: block;
+  line-height: 0.86;
+  margin-bottom: 6px;
+}
+
+.dual-front {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(4.5rem, 11vw, 10.5rem);
+  font-weight: 900;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  display: block;
+  letter-spacing: -0.03em;
+}
+
+.dual-ghost {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(4.5rem, 11vw, 10.5rem);
+  font-weight: 900;
+  color: #2e2e2e;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  display: block;
+  letter-spacing: -0.03em;
+  pointer-events: none;
+}
+
+/* ENGINEER — smaller than SOFTWARE */
+.dual-recede {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3rem, 7.5vw, 7rem);
+  font-weight: 900;
+  color: #2e2e2e;
+  display: block;
+  letter-spacing: -0.03em;
+  line-height: 0.88;
+}
+
+.hero-tagline {
+  font-size: 1.05rem;
+  color: var(--text-secondary) !important;
+  line-height: 1.65;
+  margin-top: 24px;
+  max-width: 460px;
+}
+
+/* ── STATS ─────────────────────────────────────── */
+.hero-stats {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3rem, 5.5vw, 5.5rem);
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #555;
+  letter-spacing: 0.1em;
+  margin-top: 8px;
+  text-transform: uppercase;
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+/* ── SPECIALTY CARDS ───────────────────────────── */
+.specialty-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.specialty-card {
+  border-radius: 22px;
+  padding: 36px 30px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  min-height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+
+.specialty-card.red  { background: #F4703A; }
+.specialty-card.cyan { background: #CCFF2E; }
+
+/* Wave pattern on orange card */
+.specialty-card.red::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200'%3E%3Cpath d='M-20 80 C30 40, 80 120, 130 80 S230 40, 280 80 S380 120, 430 80' fill='none' stroke='%23F58350' stroke-width='28' stroke-linecap='round'/%3E%3Cpath d='M-20 140 C30 100, 80 180, 130 140 S230 100, 280 140 S380 180, 430 140' fill='none' stroke='%23F58350' stroke-width='28' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: 320px auto;
+  background-position: right -20px center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Lightning pattern on lime card */
+.specialty-card.cyan::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='220'%3E%3Cpolyline points='80,10 50,90 75,90 30,210' fill='none' stroke='%23AADE1A' stroke-width='18' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpolyline points='150,10 120,90 145,90 100,210' fill='none' stroke='%23AADE1A' stroke-width='18' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpolyline points='220,10 190,90 215,90 170,210' fill='none' stroke='%23AADE1A' stroke-width='18' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size: 280px auto;
+  background-position: right -10px center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.sc-icon {
+  font-size: 24px;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.sc-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  flex: 1;
+  margin: 0;
+  white-space: pre-line;
+  line-height: 1.4;
+  position: relative;
+  z-index: 1;
+}
+
+.specialty-card.red  .sc-text { color: #fff !important; }
+.specialty-card.cyan .sc-text { color: #1a1a1a !important; }
+
+.sc-arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  font-size: 12px;
+  transition: transform 0.2s;
+  position: relative;
+  z-index: 1;
+}
+
+.specialty-card:hover .sc-arrow {
+  transform: translate(3px, -3px);
+}
+
+.specialty-card.red  .sc-arrow { background: rgba(255,255,255,0.2); color: #fff; border-radius: 8px; }
+.specialty-card.cyan .sc-arrow { background: rgba(0,0,0,0.12); color: #1a1a1a; border-radius: 8px; }
+
+@media (max-width: 600px) {
+  .specialty-cards { grid-template-columns: 1fr; }
+  .hero-stats { gap: 28px; }
+  .hero-content { padding: 32px 20px 48px; gap: 36px; }
+}
