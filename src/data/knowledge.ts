@@ -36,9 +36,10 @@ export const KNOWLEDGE_BASE = {
       location: "Chennai, India",
       period: "Jan 2022 – May 2024",
       highlights: [
-        "Modernized a legacy monitoring platform to React.js, reducing customer support tickets by over 80%.",
-        "Designed Node backend services with PostgreSQL/MongoDB, reducing retrieval latency by 30%.",
-        "Automated CI/CD pipelines with GitHub Actions and Docker, shortening release cycles by ~40%."
+        "Modernized a legacy monitoring platform from jQuery + JSP to a modular React.js architecture, enabling real-time dashboards for 10,000+ daily enterprise users and reducing customer support tickets by 80%.",
+        "Designed RESTful APIs using Node.js with PostgreSQL and MongoDB, implementing schema validation, indexing, and query optimization — reducing retrieval latency by 30% and cloud infrastructure costs by 15%.",
+        "Improved reliability through Jest-based test suites and CI/CD pipelines using GitHub Actions and Docker, preventing regressions across 10+ production releases and shortening release cycles by 40%.",
+        "Engineered backend services integrating third-party systems with idempotent processing, schema validation, and retry logic to eliminate sync lag and schema-related failures."
       ]
     }
   ],
