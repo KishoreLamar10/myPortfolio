@@ -5,7 +5,6 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import ContactMe from "./components/contactMe";
-import Footer from "./components/Footer";
 import AIChatbot from "./components/AIChatbot";
 import "./App.css";
 
@@ -26,7 +25,6 @@ function App() {
           <Experience />
           <Skills />
           <ContactMe />
-          <Footer />
         </main>
       </div>
 

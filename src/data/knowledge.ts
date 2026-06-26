@@ -20,10 +20,10 @@ export const KNOWLEDGE_BASE = {
   ],
   experience: [
     {
-      title: "Software Engineering Research Assistant",
-      company: "University at Buffalo, SUNY",
+      title: "Research Software Engineer",
+      company: "Research Foundation at SUNY",
       location: "Buffalo, NY",
-      period: "Jan 2026 – Present",
+      period: "Feb 2026 – Present",
       highlights: [
         "Built a full-stack GIS research platform (React, FastAPI, PostgreSQL) to catalog 500+ buildings and 15+ years of historical imagery.",
         "Engineered an agentic AI analysis pipeline with LangGraph, orchestrating coordinate sampling, facade scoring, and result persistence via MCP tool servers.",
