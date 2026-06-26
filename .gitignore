@@ -31,3 +31,4 @@ dist-ssr
 *.jpg
 !public/*.jpeg
 !public/*.jpg
+.vercel

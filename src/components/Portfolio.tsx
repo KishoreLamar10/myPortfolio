@@ -117,12 +117,17 @@ const projects: Project[] = [
   },
 ];
 
+const VISIBLE_COUNT = 4;
+
 function Portfolio() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = selectedProject ? "hidden" : "unset";
   }, [selectedProject]);
+
+  const visibleProjects = showAll ? projects : projects.slice(0, VISIBLE_COUNT);
 
   return (
     <section id="portfolio" className="portfolio-section">
@@ -141,7 +146,7 @@ function Portfolio() {
       </div>
 
       <div className="project-list">
-        {projects.map((project, index) => (
+        {visibleProjects.map((project, index) => (
           <motion.div
             key={project.id}
             className="project-card"
@@ -167,6 +172,27 @@ function Portfolio() {
           </motion.div>
         ))}
       </div>
+
+      <motion.div
+        className="project-browse-row"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <button
+          className="project-browse-btn"
+          onClick={() => setShowAll(v => !v)}
+        >
+          {showAll ? "Show Less" : `Browse All ${projects.length} Projects`}
+          <FaArrowRight
+            style={{
+              transform: showAll ? "rotate(-90deg)" : "rotate(90deg)",
+              transition: "transform 0.3s",
+            }}
+          />
+        </button>
+      </motion.div>
 
       <ProjectModal
         project={selectedProject}
