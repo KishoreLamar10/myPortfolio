@@ -8,7 +8,7 @@ interface Project {
   id: number;
   title: string;
   img: string;
-  link: string;
+  link?: string;
   github?: string;
   tags: string[];
   description: string;
@@ -17,6 +17,16 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    id: 9,
+    img: "/proj-llm-server.png",
+    github: "https://github.com/KishoreLamar10/llm-inference-server",
+    title: "LLM Inference Server",
+    tags: ["Continuous Batching", "PagedAttention", "FastAPI"],
+    description: "Production-grade LLM inference server built from scratch — no vLLM, no TGI, no Ray Serve. Implements the core mechanisms that power modern serving systems.",
+    problem: "Existing LLM serving frameworks abstract away the critical batching and memory management decisions that determine throughput. Understanding and controlling these mechanisms requires building from first principles.",
+    solution: "Implemented Orca-style continuous batching, a PagedAttention block KV cache with O(1) LRU eviction, and a hot-swappable FCFS/SJF scheduler. Benchmarked at 20.37 req/s (SJF) vs 17.16 req/s (FCFS) — +18.7% throughput — across 200 Poisson-arrival requests. 229 tests across all layers.",
+  },
   {
     id: 8,
     img: "/proj-arch-analysis.png",

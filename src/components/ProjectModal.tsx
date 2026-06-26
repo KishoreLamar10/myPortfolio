@@ -6,7 +6,7 @@ interface Project {
   id: number;
   title: string;
   img: string;
-  link: string;
+  link?: string;
   github?: string;
   tags: string[];
   description: string;
@@ -76,11 +76,13 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
               </div>
 
               <div className="modal-links">
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="modal-link primary">
-                  <FaExternalLinkAlt /> Live Site
-                </a>
+                {project.link && (
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="modal-link primary">
+                    <FaExternalLinkAlt /> Live Site
+                  </a>
+                )}
                 {project.github && (
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="modal-link secondary">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className={`modal-link ${project.link ? 'secondary' : 'primary'}`}>
                     <FaGithub /> GitHub
                   </a>
                 )}

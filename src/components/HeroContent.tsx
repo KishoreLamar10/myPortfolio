@@ -4,7 +4,7 @@ import "./HeroContent.css";
 
 const stats = [
   { value: "+3", label: "YEARS OF\nEXPERIENCE" },
-  { value: "+8", label: "PROJECTS\nCOMPLETED" },
+  { value: "+9", label: "PROJECTS\nCOMPLETED" },
   { value: "+2", label: "COMPANIES\nWORKED" },
 ];
 
